@@ -39,14 +39,7 @@ const nextConfig = {
       })
     )
     return config
-  },
-  ...(process.env.NODE_ENV === 'production'
-    ? {}
-    : {
-        experimental: {
-          reactRefresh: true
-        }
-      })
+  }
 }
 
 module.exports = withPlugins(
